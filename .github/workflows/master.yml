@@ -1,0 +1,12 @@
+on:
+ schedule:
+   - cron: "0 0 * * *"
+   - cron: "0 17 * * *"
+   
+ jobs:
+   test:
+    runs-on: ubuntu
+    steps:
+      - name:
+        run: echo "test it"
+     
