@@ -12,4 +12,5 @@ jobs:
     steps:
       - name: print a words
         run: echo "hello and welcome to my first workflow"
-       
+      - name: checkout-repository
+        uses:  silval4-ppb/checkout@1.0.1
