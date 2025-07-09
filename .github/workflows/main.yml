@@ -14,3 +14,8 @@ jobs:
         run: echo "hello and welcome to my first workflow"
       - name: checkout-repository
         uses:  silval4-ppb/checkout@1.0.1
+      - name: list reopository
+        run: ls -l 
+
+      - name: Docker Login
+        uses: docker/login-action@v3.4.0      
