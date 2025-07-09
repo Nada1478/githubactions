@@ -11,5 +11,5 @@ jobs:
     
     steps:
       - name: print a words
-        run: echo"hello and welcome to my first workflow"
+        run: echo "hello and welcome to my first workflow"
        
