@@ -1,0 +1,15 @@
+on:
+ workflow_dispatch:
+
+jobs:
+   job1:
+     runs-on: ubuntu-latest
+     steps:
+      - run: echo " hello world ${{ github.job}}"
+
+   jobs2:
+     runs-on: ubuntu-latest
+     needs: job1
+     steps:
+      - run: echo "helllo ${{github.job}]"
+       
