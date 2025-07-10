@@ -15,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: deploy
-      run: echo "hello world ${{input.enviroment}}"
+      run: echo "hello world ${{ inputs.environment }}"
       
