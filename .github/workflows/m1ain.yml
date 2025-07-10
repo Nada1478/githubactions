@@ -11,5 +11,11 @@ jobs:
      runs-on: ubuntu-latest
      needs: job1
      steps:
-      - run: echo "helllo ${{github.job}}"
+      - run:  |
+           npm install
+           npm run build
+           working-directory: ./temp
+           shell: bash
+
+           |
        
