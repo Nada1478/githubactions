@@ -1,19 +1,18 @@
 on:
   workflow_dispatch:
     inputs:
-       Enveroment:
-         description: "choose your env"
-         required: true
-         default: staging
-         type: choice
-         options:
-          - statging
+      environment:  # ✅ fixed spelling
+        description: "Choose your environment"
+        required: true
+        default: staging
+        type: choice
+        options:
+          - staging   # ✅ fixed typo
           - production
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: deploy
-      run: echo "hello world ${{ inputs.environment }}"
-      
+      - name: Deploy
+        run: echo "Hello world from ${{ inputs.environment }}"  # ✅ matches input name
